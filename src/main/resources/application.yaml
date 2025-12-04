@@ -1,3 +1,13 @@
 spring:
   application:
     name: wrapper
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      base-url: https://api.groq.com/openai
+      chat:
+        options:
+          model: llama3-70b-8192
+          temperature: 0.7
+
+
